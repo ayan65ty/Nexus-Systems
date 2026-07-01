@@ -6,8 +6,10 @@
     <title>Nexus Digital Lab</title>
     <link rel="stylesheet" href="style.css">
 
-    </head>
-
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2473834362610034"
+        crossorigin="anonymous"></script>
+</head>
 <body>
 
     <!-- NAVBAR -->
@@ -40,7 +42,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about hidden">
+    <section id="about" class="about">
         <div class="about-container">
 
             <div class="about-video-card">
@@ -51,16 +53,14 @@
 
             <div class="about-text">
                 <h2>About Nexus Digital Lab</h2>
-
                 <p>
                     Nexus Digital Lab is a modern digital agency focused on
                     building premium websites, automation systems, and smart
-                    software solutions for businesses worldwide.
+                    software solutions.
                 </p>
 
                 <p>
-                    We help brands increase productivity, improve digital
-                    presence, and scale faster using innovative technology.
+                    We help businesses scale faster with innovative technology.
                 </p>
             </div>
 
@@ -68,7 +68,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="services hidden">
+    <section id="services" class="services">
         <h2>Our Services</h2>
 
         <div class="services-grid">
@@ -84,7 +84,7 @@
 
             <div class="service-card">
                 <h3>SaaS Development</h3>
-                <p>Custom software and scalable web applications.</p>
+                <p>Custom software and scalable web apps.</p>
             </div>
 
             <div class="service-card">
@@ -95,8 +95,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio hidden">
-
+    <section id="portfolio" class="portfolio">
         <video autoplay muted loop playsinline class="portfolio-video">
             <source src="https://res.cloudinary.com/irbhydja/video/upload/v1782835284/8971250-uhd_3840_2160_25fps_dgl0au.mp4" type="video/mp4">
         </video>
@@ -108,10 +107,9 @@
             <p>Products built by Nexus Digital Lab</p>
 
             <div class="portfolio-grid">
-
                 <div class="portfolio-card">
                     <h3>Video Downloader</h3>
-                    <p>Multi-platform smart downloader app.</p>
+                    <p>Multi-platform downloader app.</p>
 
                     <a href="https://devflex-dn1i.onrender.com" target="_blank">
                         <button>Open Project</button>
@@ -127,34 +125,30 @@
                     <h3>More Projects</h3>
                     <p>More premium products coming soon.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FOUNDER -->
-    <section id="founder" class="founder hidden">
+    <section id="founder" class="founder">
         <div class="founder-card">
-            <h2>Meet the Founder</h2>
+            <h2>Meet The Founder</h2>
             <h3>Ayomide Samuel</h3>
 
             <p>
-                I founded Nexus Digital Lab with one mission:
-                to build powerful digital products that help
-                businesses grow faster.
+                I founded Nexus Digital Lab to build powerful digital products
+                that help businesses grow faster.
             </p>
 
             <p>
-                From premium websites to automation systems and
-                SaaS products, Nexus Digital Lab is focused on
-                innovation, speed, and modern design.
+                From websites to automation and SaaS systems,
+                Nexus is built for innovation.
             </p>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact hidden">
-
+    <section id="contact" class="contact">
         <video autoplay muted loop playsinline class="contact-video">
             <source src="https://res.cloudinary.com/irbhydja/video/upload/v1782835553/8865886-hd_1920_1080_25fps_hwbd2b.mp4" type="video/mp4">
         </video>
@@ -169,7 +163,6 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
-
                 <button type="submit">Send Message</button>
             </form>
 
@@ -184,8 +177,28 @@
         <p>© 2026 Nexus Digital Lab</p>
         <a href="privacy.html">Privacy Policy</a>
     </footer>
+    <!-- NEXUS AI CHATBOT -->
+<div class="chatbot-toggle" onclick="toggleChat()">🤖</div>
+
+<div class="chatbot-box" id="chatbox">
+    <div class="chat-header">
+        Nexus AI Assistant
+        <span onclick="toggleChat()">✕</span>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+        <div class="bot-message">
+            Hi 👋 Welcome to Nexus Digital Lab.<br>
+            Ask me about our services, pricing, or projects.
+        </div>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" id="userInput" placeholder="Ask Nexus AI...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
